@@ -1,0 +1,135 @@
+{
+  "cheDo": "bang",
+  "bangs": [
+    {
+      "tenBang": "Bảng A",
+      "doi": [
+        {
+          "tenDoi": "FC A1",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Nguyễn Văn A1-1" },
+            { "soAo": 2,  "ten": "Trần Văn A1-2" },
+            { "soAo": 3,  "ten": "Lê Công A1-3" },
+            { "soAo": 4,  "ten": "Phạm Minh A1-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng A1-5" },
+            { "soAo": 6,  "ten": "Võ Hải A1-6" },
+            { "soAo": 7,  "ten": "Huỳnh Đức A1-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh A1-8" },
+            { "soAo": 9,  "ten": "Phan Huy A1-9" },
+            { "soAo": 10, "ten": "Lâm Tấn A1-10" }
+          ]
+        },
+        {
+          "tenDoi": "FC A2",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Nguyễn Văn A2-1" },
+            { "soAo": 2,  "ten": "Trần Văn A2-2" },
+            { "soAo": 3,  "ten": "Lê Công A2-3" },
+            { "soAo": 4,  "ten": "Phạm Minh A2-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng A2-5" },
+            { "soAo": 6,  "ten": "Võ Hải A2-6" },
+            { "soAo": 7,  "ten": "Huỳnh Đức A2-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh A2-8" },
+            { "soAo": 9,  "ten": "Phan Huy A2-9" },
+            { "soAo": 10, "ten": "Lâm Tấn A2-10" }
+          ]
+        },
+        {
+          "tenDoi": "FC A3",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Nguyễn Văn A3-1" },
+            { "soAo": 2,  "ten": "Trần Văn A3-2" },
+            { "soAo": 3,  "ten": "Lê Công A3-3" },
+            { "soAo": 4,  "ten": "Phạm Minh A3-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng A3-5" },
+            { "soAo": 6,  "ten": "Võ Hải A3-6" },
+            { "soAo": 7,  "ten": "Huỳnh Đức A3-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh A3-8" },
+            { "soAo": 9,  "ten": "Phan Huy A3-9" },
+            { "soAo": 10, "ten": "Lâm Tấn A3-10" }
+          ]
+        },
+        {
+          "tenDoi": "FC A4",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Nguyễn Văn A4-1" },
+            { "soAo": 2,  "ten": "Trần Văn A4-2" },
+            { "soAo": 3,  "ten": "Lê Công A4-3" },
+            { "soAo": 4,  "ten": "Phạm Minh A4-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng A4-5" },
+            { "soAo": 6,  "ten": "Võ Hải A4-6" },
+            { "soAo": 7,  "ten": "Huỳnh Đức A4-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh A4-8" },
+            { "soAo": 9,  "ten": "Phan Huy A4-9" },
+            { "soAo": 10, "ten": "Lâm Tấn A4-10" }
+          ]
+        }
+      ]
+    },
+    {
+      "tenBang": "Bảng B",
+      "doi": [
+        {
+          "tenDoi": "FC B1",
+          "cauThu": [
+            { "soAo": 11, "ten": "Nguyễn Duy B1-11" },
+            { "soAo": 2,  "ten": "Trần Văn B1-2" },
+            { "soAo": 3,  "ten": "Lê Công B1-3" },
+            { "soAo": 4,  "ten": "Phạm Minh B1-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng B1-5" },
+            { "soAo": 6,  "ten": "Lâm Nhật B1-6" },
+            { "soAo": 7,  "ten": "Huỳnh Văn B1-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh B1-8" },
+            { "soAo": 9,  "ten": "Phan Huy B1-9" },
+            { "soAo": 10, "ten": "Lâm Tấn B1-10" }
+          ]
+        },
+        {
+          "tenDoi": "FC B2",
+          "cauThu": [
+            { "soAo": 11, "ten": "Nguyễn Duy B2-11" },
+            { "soAo": 2,  "ten": "Trần Văn B2-2" },
+            { "soAo": 3,  "ten": "Lê Công B2-3" },
+            { "soAo": 4,  "ten": "Phạm Minh B2-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng B2-5" },
+            { "soAo": 6,  "ten": "Lâm Nhật B2-6" },
+            { "soAo": 7,  "ten": "Huỳnh Văn B2-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh B2-8" },
+            { "soAo": 9,  "ten": "Phan Huy B2-9" },
+            { "soAo": 10, "ten": "Lâm Tấn B2-10" }
+          ]
+        },
+        {
+          "tenDoi": "FC B3",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Nguyễn Văn B3-1" },
+            { "soAo": 2,  "ten": "Trần Văn B3-2" },
+            { "soAo": 3,  "ten": "Lê Công B3-3" },
+            { "soAo": 4,  "ten": "Phạm Minh B3-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng B3-5" },
+            { "soAo": 6,  "ten": "Võ Hải B3-6" },
+            { "soAo": 7,  "ten": "Huỳnh Đức B3-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh B3-8" },
+            { "soAo": 9,  "ten": "Phan Huy B3-9" },
+            { "soAo": 10, "ten": "Lâm Tấn B3-10" }
+          ]
+        },
+        {
+          "tenDoi": "FC B4",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Nguyễn Văn B4-1" },
+            { "soAo": 2,  "ten": "Trần Văn B4-2" },
+            { "soAo": 3,  "ten": "Lê Công B4-3" },
+            { "soAo": 4,  "ten": "Phạm Minh B4-4" },
+            { "soAo": 5,  "ten": "Đỗ Hoàng B4-5" },
+            { "soAo": 6,  "ten": "Võ Hải B4-6" },
+            { "soAo": 7,  "ten": "Huỳnh Đức B4-7" },
+            { "soAo": 8,  "ten": "Bùi Khánh B4-8" },
+            { "soAo": 9,  "ten": "Phan Huy B4-9" },
+            { "soAo": 10, "ten": "Lâm Tấn B4-10" }
+          ]
+        }
+      ]
+    }
+  ]
+}

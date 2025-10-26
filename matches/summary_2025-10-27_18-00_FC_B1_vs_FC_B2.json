@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "date": "2025-10-27",
+    "time": "18:00",
+    "field": "Sân 2",
+    "referee": "Nam"
+  },
+  "teams": {
+    "A": {
+      "name": "FC B1",
+      "score": 3
+    },
+    "B": {
+      "name": "FC B2",
+      "score": 2
+    }
+  },
+  "lineup": {
+    "A": [
+      { "soAo": "11", "ten": "Nguyễn Duy B1-11", "present": true },
+      { "soAo": "6", "ten": "Lâm Nhật B1-6", "present": true },
+      { "soAo": "7", "ten": "Huỳnh Văn B1-7", "present": true },
+      { "soAo": "8", "ten": "Bùi Khánh B1-8", "present": true },
+      { "soAo": "9", "ten": "Phan Huy B1-9", "present": true },
+      { "soAo": "10", "ten": "Lâm Tấn B1-10", "present": true },
+      { "soAo": "3", "ten": "Lê Công B1-3", "present": true },
+      { "soAo": "4", "ten": "Phạm Minh B1-4", "present": true },
+      { "soAo": "5", "ten": "Đỗ Hoàng B1-5", "present": true },
+      { "soAo": "2", "ten": "Trần Văn B1-2", "present": true }
+    ],
+    "B": [
+      { "soAo": "11", "ten": "Nguyễn Duy B2-11", "present": true },
+      { "soAo": "6", "ten": "Lâm Nhật B2-6", "present": true },
+      { "soAo": "7", "ten": "Huỳnh Văn B2-7", "present": true },
+      { "soAo": "8", "ten": "Bùi Khánh B2-8", "present": true },
+      { "soAo": "9", "ten": "Phan Huy B2-9", "present": true },
+      { "soAo": "10", "ten": "Lâm Tấn B2-10", "present": true },
+      { "soAo": "3", "ten": "Lê Công B2-3", "present": true },
+      { "soAo": "4", "ten": "Phạm Minh B2-4", "present": true },
+      { "soAo": "5", "ten": "Đỗ Hoàng B2-5", "present": true },
+      { "soAo": "2", "ten": "Trần Văn B2-2", "present": true }
+    ]
+  },
+  "goals": [
+    {
+      "minute": 5,
+      "teamName": "FC B1",
+      "playerNumber": "11",
+      "playerName": "Nguyễn Duy B1-11"
+    },
+    {
+      "minute": 12,
+      "teamName": "FC B2",
+      "playerNumber": "10",
+      "playerName": "Lâm Tấn B2-10"
+    },
+    {
+      "minute": 24,
+      "teamName": "FC B1",
+      "playerNumber": "9",
+      "playerName": "Phan Huy B1-9"
+    },
+    {
+      "minute": 38,
+      "teamName": "FC B2",
+      "playerNumber": "8",
+      "playerName": "Bùi Khánh B2-8"
+    },
+    {
+      "minute": 40,
+      "teamName": "FC B1",
+      "playerNumber": "10",
+      "playerName": "Lâm Tấn B1-10"
+    }
+  ],
+  "cards": [
+    {
+      "minute": 18,
+      "teamName": "FC B1",
+      "playerNumber": "5",
+      "playerName": "Đỗ Hoàng B1-5",
+      "cardType": "Vàng"
+    },
+    {
+      "minute": 44,
+      "teamName": "FC B2",
+      "playerNumber": "4",
+      "playerName": "Phạm Minh B2-4",
+      "cardType": "Đỏ"
+    }
+  ],
+  "sign": {
+    "captainA": "ký đội B1",
+    "captainB": "ký đội B2",
+    "refereeSig": "ký trọng tài"
+  }
+}

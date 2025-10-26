@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>BXH & Thống kê giải đấu</title>
+  <link rel="stylesheet" href="rank.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="brand">
+    <div class="dot"></div>
+    <div class="title">BXH & Thống kê giải đấu</div>
+  </div>
+
+  <div class="header-tools">
+    <div class="info-line">
+      <span class="dim" id="matchCountLabel">(0 trận đã nạp)</span>
+    </div>
+    <button id="btnReload" class="btn ghost small">↻ Tải lại</button>
+    <button id="btnClearTemp" class="btn ghost small redish">Xoá tạm bộ nhớ</button>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- 1. BXH -->
+  <section class="card">
+    <div class="card-header-row">
+      <h2>1. Bảng xếp hạng</h2>
+      <div class="subnote">
+        BXH sẽ tự hiểu chế độ giải từ <b>teams.json</b>:
+        <ul class="note-ul">
+          <li><code>"cheDo": "bang"</code> → hiển thị BXH theo từng bảng (Bảng A, Bảng B, ...)</li>
+          <li><code>"cheDo": "vong"</code> → hiển thị BXH 1 bảng tổng (tất cả đội gặp nhau)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="standingsWrap" class="standings-wrap">
+      <!-- JS render nhiều bảng -->
+      <div class="dim smalltxt">(Đang tải dữ liệu...)</div>
+    </div>
+  </section>
+
+  <!-- 2. Vua phá lưới -->
+  <section class="card">
+    <div class="card-header-row">
+      <h2>2. Vua phá lưới</h2>
+      <div class="subnote">
+        Cộng dồn tất cả bàn thắng trong toàn giải (tất cả các bảng).
+      </div>
+    </div>
+
+<div class="scroll-box table-wrap">
+  <table class="table small-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Cầu thủ</th>
+        <th>Đội</th>
+        <th>Bàn</th>
+      </tr>
+    </thead>
+    <tbody id="scorerTbody">
+      <tr><td colspan="4" class="dim">(không có dữ liệu)</td></tr>
+    </tbody>
+  </table>
+</div>
+  </section>
+
+  <!-- 3. Thẻ phạt toàn giải -->
+  <section class="card">
+    <div class="card-header-row">
+      <h2>3. Thẻ phạt toàn giải</h2>
+      <div class="subnote">
+        Tổng hợp số thẻ vàng/đỏ của từng cầu thủ qua tất cả các trận.
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table small-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Cầu thủ</th>
+            <th>Đội</th>
+            <th>Vàng</th>
+            <th>Đỏ</th>
+          </tr>
+        </thead>
+        <tbody id="cardsAggTbody">
+          <tr><td colspan="5" class="dim">(không có dữ liệu)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 4. Thẻ theo đội -->
+  <section class="card">
+    <div class="card-header-row">
+      <h2>4. Chi tiết thẻ theo đội</h2>
+      <div class="subnote">
+        Chọn đội để xem tổng thẻ vàng / đỏ và log chi tiết từng thẻ (ai nhận, phút mấy, trong trận nào).
+      </div>
+    </div>
+
+    <div class="two-col align-end mb16">
+      <div class="fc">
+        <label>Chọn đội</label>
+        <select id="teamFilterSelect" class="select-dark"></select>
+      </div>
+      <div class="team-card-summary fc">
+        <label>Tổng thẻ</label>
+        <div id="teamCardTotals" class="team-card-totals dim smalltxt">
+          Vàng: 0 · Đỏ: 0
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table small-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Trận</th>
+            <th>Phút</th>
+            <th>Thẻ</th>
+            <th>Cầu thủ</th>
+          </tr>
+        </thead>
+        <tbody id="teamCardsDetailTbody">
+          <tr><td colspan="5" class="dim">(chọn đội để xem)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<div id="toast">Saved</div>
+
+<script src="rank.js"></script>
+</body>
+</html>

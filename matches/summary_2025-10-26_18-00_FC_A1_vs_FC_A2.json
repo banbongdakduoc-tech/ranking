@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "date": "2025-10-26",
+    "time": "18:00",
+    "field": "Sân 1",
+    "referee": "Nam"
+  },
+  "teams": {
+    "A": {
+      "name": "FC A1",
+      "score": 2
+    },
+    "B": {
+      "name": "FC A2",
+      "score": 1
+    }
+  },
+  "lineup": {
+    "A": [
+      { "soAo": "1", "ten": "Nguyễn Văn A1-1", "present": true },
+      { "soAo": "2", "ten": "Trần Văn A1-2", "present": true },
+      { "soAo": "3", "ten": "Lê Công A1-3", "present": true },
+      { "soAo": "4", "ten": "Phạm Minh A1-4", "present": true },
+      { "soAo": "5", "ten": "Đỗ Hoàng A1-5", "present": true },
+      { "soAo": "6", "ten": "Võ Hải A1-6", "present": true },
+      { "soAo": "7", "ten": "Huỳnh Đức A1-7", "present": true },
+      { "soAo": "8", "ten": "Bùi Khánh A1-8", "present": true },
+      { "soAo": "9", "ten": "Phan Huy A1-9", "present": true },
+      { "soAo": "10", "ten": "Lâm Tấn A1-10", "present": true }
+    ],
+    "B": [
+      { "soAo": "1", "ten": "Nguyễn Văn A2-1", "present": true },
+      { "soAo": "2", "ten": "Trần Văn A2-2", "present": true },
+      { "soAo": "3", "ten": "Lê Công A2-3", "present": true },
+      { "soAo": "4", "ten": "Phạm Minh A2-4", "present": true },
+      { "soAo": "5", "ten": "Đỗ Hoàng A2-5", "present": true },
+      { "soAo": "6", "ten": "Võ Hải A2-6", "present": true },
+      { "soAo": "7", "ten": "Huỳnh Đức A2-7", "present": true },
+      { "soAo": "8", "ten": "Bùi Khánh A2-8", "present": true },
+      { "soAo": "9", "ten": "Phan Huy A2-9", "present": true },
+      { "soAo": "10", "ten": "Lâm Tấn A2-10", "present": true }
+    ]
+  },
+  "goals": [
+    {
+      "minute": 12,
+      "teamName": "FC A1",
+      "playerNumber": "9",
+      "playerName": "Phan Huy A1-9"
+    },
+    {
+      "minute": 28,
+      "teamName": "FC A1",
+      "playerNumber": "10",
+      "playerName": "Lâm Tấn A1-10"
+    },
+    {
+      "minute": 35,
+      "teamName": "FC A2",
+      "playerNumber": "7",
+      "playerName": "Huỳnh Đức A2-7"
+    }
+  ],
+  "cards": [
+    {
+      "minute": 22,
+      "teamName": "FC A1",
+      "playerNumber": "4",
+      "playerName": "Phạm Minh A1-4",
+      "cardType": "Vàng"
+    },
+    {
+      "minute": 40,
+      "teamName": "FC A2",
+      "playerNumber": "2",
+      "playerName": "Trần Văn A2-2",
+      "cardType": "Đỏ"
+    }
+  ],
+  "sign": {
+    "captainA": "ký đội A1 (data base64 nếu có)",
+    "captainB": "ký đội A2 (data base64 nếu có)",
+    "refereeSig": "ký trọng tài (data base64 nếu có)"
+  }
+}

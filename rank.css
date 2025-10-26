@@ -1,0 +1,348 @@
+:root{
+  --bg-page:#0a100c;
+  --bg-card:#101a14;
+  --bg-card-alt:#0f1813;
+  --border:#1f2a23;
+  --text-main:#e8fdee;
+  --text-dim:#9db5aa;
+  --accent:#1fb655;
+  --accent-dark:#106a32;
+  --radius:10px;
+  --radius-sm:6px;
+  --font:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:radial-gradient(circle at 10% 20%,rgba(31,182,85,0.18)0%,rgba(10,16,12,0)60%),var(--bg-page);
+  color:var(--text-main);
+  font-family:var(--font);
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:80px;
+}
+
+/* header */
+.app-header{
+  background:#0d140f;
+  border-bottom:1px solid var(--border);
+  padding:12px 16px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  color:var(--text-main);
+  font-size:15px;
+}
+.brand .dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background:var(--accent);
+  box-shadow:0 0 10px var(--accent);
+}
+.header-tools{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 12px;
+  font-size:13px;
+}
+.info-line{
+  color:var(--text-dim);
+  line-height:1.4;
+}
+
+/* main layout */
+.main{
+  max-width:1200px;
+  margin:24px auto;
+  padding:0 16px 64px;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+/* card */
+.card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:0 20px 60px #00000066;
+  padding:16px 16px 20px;
+}
+.card-header-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:16px;
+}
+.card-header-row h2{
+  font-size:16px;
+  font-weight:600;
+  color:var(--text-main);
+}
+.subnote{
+  font-size:13px;
+  color:var(--text-dim);
+  line-height:1.5;
+  max-width:780px;
+}
+.subnote code{
+  background:#0f1813;
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:1px 4px;
+  font-size:12px;
+  color:var(--accent);
+}
+.note-ul{
+  margin-top:6px;
+  padding-left:18px;
+}
+.note-ul li{
+  margin-bottom:4px;
+}
+
+/* small helpers */
+.smalltxt{font-size:13px;line-height:1.4;}
+.dim{color:var(--text-dim);}
+.mb16{margin-bottom:16px;}
+.hidden{display:none!important;}
+
+.two-col{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.two-col.align-end{
+  align-items:flex-end;
+}
+.two-col>.fc{
+  flex:1 1 200px;
+}
+
+/* form components */
+.fc{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  color:var(--text-main);
+}
+.fc label{
+  font-size:13px;
+  font-weight:500;
+  color:var(--text-main);
+}
+.select-dark{
+  background:#0f1813;
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  color:var(--text-main);
+  font-size:14px;
+  padding:10px 12px;
+  line-height:1.4;
+  font-family:var(--font);
+}
+.select-dark:focus{
+  outline:none;
+  border-color:var(--accent-dark);
+  box-shadow:0 0 0 2px #1fb65533;
+}
+
+/* table shell */
+.table-wrap{
+  overflow-x:auto;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:var(--bg-card-alt);
+  box-shadow:0 12px 40px #00000066;
+}
+
+.table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:480px;
+  color:var(--text-main);
+  font-size:14px;
+}
+.table.small-table{
+  min-width:360px;
+}
+.table thead{
+  background:#13231a;
+}
+.table th{
+  text-align:left;
+  padding:10px 12px;
+  border-bottom:1px solid var(--border);
+  font-weight:600;
+  font-size:13px;
+  white-space:nowrap;
+}
+.table td{
+  padding:10px 12px;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+  line-height:1.4;
+  word-break:break-word;
+}
+
+/* standings wrap */
+.standings-wrap{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.stand-card{
+  background:var(--bg-card-alt);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:0 12px 40px #00000066;
+  overflow:hidden;
+}
+.stand-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  padding:12px 16px;
+  border-bottom:1px solid var(--border);
+}
+.stand-head-left{
+  font-size:14px;
+  font-weight:600;
+  color:var(--accent);
+}
+.stand-head-right{
+  font-size:12px;
+  color:var(--text-dim);
+  line-height:1.4;
+}
+
+/* team card summary */
+.team-card-summary{
+  flex:0 0 auto;
+}
+.team-card-totals{
+  background:#0f1813;
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  padding:10px 12px;
+  min-width:140px;
+  font-weight:500;
+  color:var(--text-main);
+  box-shadow:0 10px 30px #00000066 inset;
+  text-align:center;
+}
+
+/* buttons */
+.btn{
+  appearance:none;
+  border:0;
+  border-radius:var(--radius-sm);
+  cursor:pointer;
+  font-family:var(--font);
+  font-size:14px;
+  font-weight:500;
+  line-height:1.2;
+  padding:10px 12px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  background:#1a2a22;
+  border:1px solid var(--border);
+  color:var(--text-main);
+  box-shadow:0 10px 30px #00000066;
+}
+.btn.small{
+  font-size:13px;
+  padding:7px 10px;
+}
+.btn.ghost{
+  background:#0f1813;
+  border:1px solid var(--border);
+}
+.btn.redish{
+  color:#fff;
+  border:1px solid #4a1c1c;
+  background:radial-gradient(circle at 0% 0%,#a63a3a 0%,#551a1a 60%);
+  box-shadow:0 10px 30px #4a1c1c88;
+}
+
+/* toast */
+#toast{
+  position:fixed;
+  left:50%;
+  bottom:16px;
+  transform:translateX(-50%);
+  background:#0f1813;
+  border:1px solid var(--accent-dark);
+  border-radius:var(--radius-sm);
+  color:#fff;
+  font-size:13px;
+  font-weight:500;
+  padding:10px 12px;
+  box-shadow:0 20px 60px #000000cc,0 0 20px #1fb65566 inset;
+  max-width:90%;
+  text-align:center;
+  z-index:99999;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .18s;
+}
+#toast.show{opacity:1}
+
+/* responsive */
+@media(max-width:600px){
+  .table{min-width:360px;}
+  .stand-head{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+}
+/* vùng bảng vua phá lưới và thẻ phạt với scroll sau top5 */
+.scroll-box {
+  /* chiều cao tối đa khoảng 5 hàng (+ header). 
+     Nếu hơn thì sẽ xuất hiện thanh cuộn */
+  max-height: 220px; /* bạn có thể chỉnh 200-240 tuỳ font */
+  overflow-y: auto;
+
+  /* viền + nền nhẹ cho cảm giác ô riêng */
+  background:#0f1813;
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow:0 12px 40px #00000066 inset;
+}
+
+/* bỏ double-border khi ta bọc table vào scroll-box */
+.scroll-box .table {
+  border-collapse: collapse;
+  min-width: 360px;
+}
+
+/* cho scrollbar nhìn đỡ thô (Chrome/Webkit) */
+.scroll-box::-webkit-scrollbar {
+  width:6px;
+}
+.scroll-box::-webkit-scrollbar-track {
+  background:#0a100c;
+  border-radius:4px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+  background:#1fb65566;
+  border-radius:4px;
+}
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background:#1fb655aa;
+}
