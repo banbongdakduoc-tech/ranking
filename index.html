@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0; URL=rank.html" />
+  <title>Đang chuyển hướng...</title>
+  <style>
+    body {
+      background:#000;
+      color:#fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", Roboto, sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      text-align:center;
+    }
+    .box {
+      background:#111;
+      border:1px solid #2f2;
+      border-radius:12px;
+      padding:24px 32px;
+      box-shadow:0 20px 60px rgba(0,0,0,.8),0 0 40px rgba(0,255,100,.2);
+    }
+    .box h1 {
+      margin:0 0 8px;
+      font-size:18px;
+      color:#7CFF7C;
+    }
+    .box p {
+      margin:0;
+      font-size:14px;
+      color:#ccc;
+      line-height:1.4;
+    }
+    .box a {
+      color:#7CFF7C;
+      font-weight:500;
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Đang chuyển sang BXH...</h1>
+    <p>Nếu không tự chuyển, bấm vào đây: <a href="rank.html">Mở trang BXH</a></p>
+  </div>
+
+  <script>
+    // fallback JS redirect (phòng khi meta refresh bị chặn)
+    setTimeout(() => {
+      window.location.href = "rank.html";
+    }, 500);
+  </script>
+</body>
+</html>
