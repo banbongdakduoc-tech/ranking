@@ -6,13 +6,13 @@
   },
   "teams": {
     "A": {
-      "name": "Trường Dược FC",
-      "score": 2,
+      "name": "D22",
+      "score": 3,
       "lineup": []
     },
     "B": {
-      "name": "D22",
-      "score": 3,
+      "name": "Trường Dược FC",
+      "score": 2,
       "lineup": []
     }
   },
