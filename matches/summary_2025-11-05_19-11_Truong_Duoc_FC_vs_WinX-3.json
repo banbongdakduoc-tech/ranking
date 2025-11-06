@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2025-11-05",
-    "time": "19:11",
+    "time": "19:00",
     "referee": ""
   },
   "teams": {
@@ -18,31 +18,31 @@
   },
   "goals": [
     {
-      "minute": "9p54s",
+      "minute": "9",
       "playerName": "Bùi Quang Dũng",
       "playerNumber": "6",
       "teamName": "WinX"
     },
     {
-      "minute": "17p",
+      "minute": "17",
       "playerName": "Nguyễn Tấn Minh",
       "playerNumber": "4",
       "teamName": "WinX"
     },
     {
-      "minute": "18p",
+      "minute": "18",
       "playerName": "Trần Ngọc Thiên Phú",
       "playerNumber": "29",
       "teamName": "Trường Dược FC"
     },
     {
-      "minute": "20p",
+      "minute": "20",
       "playerName": "Tạ Quang Vượng",
       "playerNumber": "9",
       "teamName": "Trường Dược FC"
     },
     {
-      "minute": "22p",
+      "minute": "22",
       "playerName": "Trần Ngọc Thiên Phú",
       "playerNumber": "29",
       "teamName": "Trường Dược FC"
@@ -54,25 +54,25 @@
       "teamName": "Trường Dược FC"
     },
     {
-      "minute": "33p",
+      "minute": "33",
       "playerName": "Trần Chí Danh",
       "playerNumber": "16",
       "teamName": "WinX"
     },
     {
-      "minute": "36p",
+      "minute": "36",
       "playerName": "Trần Ngọc Thiên Phú",
       "playerNumber": "29",
       "teamName": "Trường Dược FC"
     },
     {
-      "minute": "38p",
+      "minute": "38",
       "playerName": "Nguyễn Đức Độ",
       "playerNumber": "72",
       "teamName": "WinX"
     },
     {
-      "minute": "40p",
+      "minute": "40",
       "playerName": "Bùi Quang Dũng",
       "playerNumber": "6",
       "teamName": "WinX"
