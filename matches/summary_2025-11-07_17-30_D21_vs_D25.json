@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "date": "2025-11-07",
+    "time": "17:30",
+    "referee": "Lợi"
+  },
+  "teams": {
+    "A": {
+      "name": "D21",
+      "score": 8,
+      "lineup": []
+    },
+    "B": {
+      "name": "D25",
+      "score": 2,
+      "lineup": []
+    }
+  },
+  "goals": [
+    {
+      "minute": "2",
+      "playerName": "Huỳnh Trần Bảo Long",
+      "playerNumber": "4",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "3",
+      "playerName": "Đặng Minh Cường",
+      "playerNumber": "7",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "5",
+      "playerName": "Hoàng Quốc Bảo",
+      "playerNumber": "16",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "7",
+      "playerName": "Nguyễn Hoàng Phú",
+      "playerNumber": "10",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "15",
+      "playerName": "Đặng Minh Cường",
+      "playerNumber": "7",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "16",
+      "playerName": "Huỳnh Trần Bảo Long",
+      "playerNumber": "4",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "16",
+      "playerName": "Trương Thiện Nhân",
+      "playerNumber": "1",
+      "teamName": "D25",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "17",
+      "playerName": "Hoàng Quốc Bảo",
+      "playerNumber": "16",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "20",
+      "playerName": "Huỳnh Trần Bảo Long",
+      "playerNumber": "4",
+      "teamName": "D21",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "34",
+      "playerName": "Nguyễn Anh Kiệt",
+      "playerNumber": "11",
+      "teamName": "D25",
+      "type": "normal",
+      "ownGoal": false
+    }
+  ],
+  "cards": [],
+  "signatures": {
+    "captainA": "data:image/png;base64,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",
+    "captainB": "data:image/png;base64,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",
+    "referee": "data:image/png;base64,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"
+  }
+}
