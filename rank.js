@@ -193,12 +193,17 @@ function computeAllStats(){
     updateStandRecord(standMap[gA][teamAName], scoreA, scoreB);
     updateStandRecord(standMap[gB][teamBName], scoreB, scoreA);
 
-    // thống kê bàn thắng
+    // ===== VUA PHÁ LƯỚI: BỎ QUA PHẢN LƯỚI =====
     const goalsArr = Array.isArray(d.goals)? d.goals: [];
     goalsArr.forEach(g=>{
       const tName = g.teamName || "";
       const pName = g.playerName || "";
       if(!tName || !pName) return;
+
+      const typeStr = (g.type||"").toLowerCase();
+      const isOwn = g.ownGoal === true || typeStr === "own" || typeStr === "phản lưới";
+      if(isOwn) return; // không cộng vào vua phá lưới
+
       const key = pName+"@@"+tName;
       if(!scorersMap[key]){
         scorersMap[key] = {playerName:pName, teamName:tName, goals:0};
@@ -247,8 +252,7 @@ function computeAllStats(){
     });
   });
 
-  // 2) Bổ sung tất cả đội từ teams.json vào standMap
-  //    để đội chưa đá vẫn hiện với Played=0, Điểm=0,...
+  // 2) Bổ sung tất cả đội từ teams.json -> đội chưa đá vẫn hiện
   groupsList.forEach(group=>{
     const gName = group.groupName || "Khác";
     if(!standMap[gName]) standMap[gName] = {};
@@ -260,7 +264,7 @@ function computeAllStats(){
     });
   });
 
-  // 3) chuẩn hoá BXH thành array mỗi bảng
+  // 3) chuẩn hoá BXH theo từng bảng
   const standingsByGroup = [];
   Object.keys(standMap).forEach(gName=>{
     const obj = standMap[gName];
@@ -286,7 +290,7 @@ function computeAllStats(){
     });
   });
 
-  // 4) vua phá lưới
+  // 4) vua phá lưới (đã bỏ phản lưới)
   const scorersArr = Object.values(scorersMap);
   scorersArr.sort((a,b)=>{
     if(b.goals!==a.goals) return b.goals-a.goals;
