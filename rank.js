@@ -16,6 +16,7 @@ let allTeamNames = [];            // ["FC A1","FC B1",...]
 let allMatches = [];              // [{path, data}, ...]
 let cardDetailsMap = {};          // teamName -> [ {matchLabel, minute, cardType, playerName, playerNumber} ]
 let teamCardsMap   = {};          // teamName -> {yellow:x, red:y}
+let allMatchesHistory = [];       // [{time, group, homeTeam, awayTeam, homeScore, awayScore, matchFile, details}]
 
 // ===== Load teams.json =====
 async function loadTeamsJson(){
@@ -168,6 +169,9 @@ function computeAllStats(){
   // reset cho thẻ theo đội
   cardDetailsMap = {};
   teamCardsMap   = {};
+  
+  // reset lịch sử trận đấu
+  allMatchesHistory = [];
 
   // 1) duyệt toàn bộ trận để cập nhật thống kê
   allMatches.forEach(m=>{
@@ -182,6 +186,50 @@ function computeAllStats(){
     // đội thuộc bảng nào?
     const gA = teamToGroup[teamAName] || "Khác";
     const gB = teamToGroup[teamBName] || "Khác";
+    // Lấy bảng chung (nếu hai đội khác bảng thì lấy bảng của đội nhà)
+    const matchGroup = gA;
+
+    // Lưu lịch sử trận đấu
+  // Lưu lịch sử trận đấu
+let matchTime = "";
+
+// Lấy từ meta nếu có
+if (d.meta) {
+  const date = d.meta.date || "";
+  const time = d.meta.time || "";
+  if (date && time) {
+    matchTime = `${date} ${time}`;
+  } else if (date) {
+    matchTime = date;
+  } else if (time) {
+    matchTime = time;
+  }
+}
+
+// Fallback sang các trường cũ nếu không có meta
+if (!matchTime) {
+  matchTime = d.time || d.date || d.thoiGian || "";
+}
+
+// Thử parse timestamp nếu có (ở cấp độ cao nhất)
+if (!matchTime && d.timestamp) {
+  const date = new Date(d.timestamp * 1000);
+  matchTime = date.toLocaleString("vi-VN");
+}
+
+// Nếu vẫn không có, để "Không rõ"
+if (!matchTime) matchTime = "Không rõ";
+    
+    allMatchesHistory.push({
+      time: matchTime || "Không rõ",
+      group: matchGroup,
+      homeTeam: teamAName,
+      awayTeam: teamBName,
+      homeScore: scoreA,
+      awayScore: scoreB,
+      matchFile: m.path,
+      details: d
+    });
 
     // chuẩn bị obj BXH (nếu chưa có)
     if(!standMap[gA]) standMap[gA]={};
@@ -304,6 +352,16 @@ function computeAllStats(){
     if(b.red!==a.red) return b.red-a.red;
     if(b.yellow!==a.yellow) return b.yellow-a.yellow;
     return a.playerName.localeCompare(b.playerName,"vi");
+  });
+  
+  // 6) Sắp xếp lịch sử trận đấu theo thời gian (mới nhất lên đầu)
+  allMatchesHistory.sort((a, b) => {
+    // Thử sắp xếp theo timestamp nếu có
+    if (a.details?.timestamp && b.details?.timestamp) {
+      return b.details.timestamp - a.details.timestamp;
+    }
+    // Fallback: sắp xếp theo tên file (thường có thứ tự thời gian)
+    return b.matchFile.localeCompare(a.matchFile);
   });
 
   return {standingsByGroup, scorersArr, cardsAggArr};
@@ -495,6 +553,191 @@ function renderTeamCardDetail(){
   });
 }
 
+// ===== Hàm render lịch sử trận đấu =====
+function renderMatchesHistory() {
+  const teamFilter = $("#matchFilterTeam").value;
+  const groupFilter = $("#matchFilterGroup").value;
+  const tbody = $("#matchesHistoryTbody");
+  const totalSpan = $("#totalMatchesCount");
+  
+  // Lọc trận đấu
+  let filteredMatches = allMatchesHistory;
+  
+  if (teamFilter) {
+    filteredMatches = filteredMatches.filter(m => 
+      m.homeTeam === teamFilter || m.awayTeam === teamFilter
+    );
+  }
+  
+  if (groupFilter) {
+    filteredMatches = filteredMatches.filter(m => m.group === groupFilter);
+  }
+  
+  // Cập nhật tổng số trận
+  totalSpan.textContent = `${filteredMatches.length} trận`;
+  
+  // Render bảng
+  tbody.innerHTML = "";
+  
+  if (!filteredMatches.length) {
+    tbody.innerHTML = `<tr><td colspan="6" class="dim">(không có trận đấu nào)</td></tr>`;
+    return;
+  }
+  
+  filteredMatches.forEach((match, idx) => {
+    const tr = createEl("tr");
+    
+    // Format tỉ số với màu sắc
+    const scoreDisplay = `${match.homeScore} - ${match.awayScore}`;
+    const isHomeWin = match.homeScore > match.awayScore;
+    const isAwayWin = match.homeScore < match.awayScore;
+    
+    let scoreClass = "";
+    if (isHomeWin) scoreClass = 'style="color: var(--accent); font-weight: 600;"';
+    else if (isAwayWin) scoreClass = 'style="color: #ff6b6b; font-weight: 600;"';
+    
+    tr.innerHTML = `
+      <td>${match.time}</td>
+      <td>${match.group}</td>
+      <td>${match.homeTeam}</td>
+      <td ${scoreClass}>${scoreDisplay}</td>
+      <td>${match.awayTeam}</td>
+      <td>
+        <button class="btn small ghost" onclick="showMatchDetail('${match.matchFile}')" style="padding: 4px 8px; font-size: 11px;">
+          📋 Xem
+        </button>
+      </td>
+    `;
+    
+    tbody.appendChild(tr);
+  });
+}
+
+// ===== Hàm hiển thị chi tiết trận đấu =====
+window.showMatchDetail = function(matchFile) {
+  const match = allMatchesHistory.find(m => m.matchFile === matchFile);
+  if (!match) return;
+  
+  const d = match.details;
+  const goals = Array.isArray(d.goals) ? d.goals : [];
+  const cards = Array.isArray(d.cards) ? d.cards : [];
+  
+  // Tạo popup đơn giản
+  const popup = document.createElement('div');
+  popup.style.cssText = `
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-card);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 24px;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 100000;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+  `;
+  
+  // Nút đóng
+  const closeBtn = document.createElement('button');
+  closeBtn.textContent = '✕';
+  closeBtn.style.cssText = `
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 20px;
+    cursor: pointer;
+  `;
+  closeBtn.onclick = () => document.body.removeChild(popup);
+  
+  // Nội dung chi tiết
+let goalsHtml = '';
+goals.forEach(g => {
+  // Kiểm tra nếu là phản lưới
+  const typeStr = (g.type || "").toLowerCase();
+  const isOwn = g.ownGoal === true || typeStr === "own" || typeStr === "phản lưới";
+  
+  // Thêm chú thích (phản lưới) nếu là own goal
+  const ownNote = isOwn ? ' (phản lưới)' : '';
+  
+  goalsHtml += `<div style="margin: 4px 0">⚽ ${g.playerName} (${g.teamName}) - phút ${g.minute || '?'}${ownNote}</div>`;
+});
+  
+  let cardsHtml = '';
+  cards.forEach(c => {
+    const cardEmoji = c.cardType?.toLowerCase().includes('vàng') ? '🟨' : '🟥';
+    cardsHtml += `<div style="margin: 4px 0">${cardEmoji} ${c.playerName} (${c.teamName}) - phút ${c.minute || '?'}</div>`;
+  });
+  
+  popup.innerHTML = `
+  <h3 style="color: var(--accent); margin-bottom: 16px; padding-right: 24px;">
+    ${match.homeTeam} ${match.homeScore} - ${match.awayScore} ${match.awayTeam}
+  </h3>
+  <div style="margin-bottom: 16px; color: var(--text-dim);">
+    Thời gian: ${match.time}<br>
+    Bảng: ${match.group}
+  </div>
+  
+  <h4 style="color: var(--text-main); margin: 16px 0 8px;">⚽ Bàn thắng</h4>
+  <div style="background: var(--bg-card-alt); padding: 12px; border-radius: var(--radius-sm);">
+    ${goalsHtml || '<div class="dim">(không có bàn thắng)</div>'}
+  </div>
+  
+  <h4 style="color: var(--text-main); margin: 16px 0 8px;">🟨🟥 Thẻ phạt</h4>
+  <div style="background: var(--bg-card-alt); padding: 12px; border-radius: var(--radius-sm);">
+    ${cardsHtml || '<div class="dim">(không có thẻ phạt)</div>'}
+  </div>
+`;
+  
+  popup.appendChild(closeBtn);
+  document.body.appendChild(popup);
+  
+  // Click outside để đóng
+  setTimeout(() => {
+    window.addEventListener('click', function onClick(e) {
+      if (!popup.contains(e.target)) {
+        document.body.removeChild(popup);
+        window.removeEventListener('click', onClick);
+      }
+    });
+  }, 100);
+}
+
+// ===== Cập nhật filter dropdowns cho lịch sử =====
+function updateMatchFilters() {
+  // Filter đội
+  const teamSelect = $("#matchFilterTeam");
+  const currentTeam = teamSelect.value;
+  teamSelect.innerHTML = '<option value="">-- Tất cả đội --</option>';
+  
+  const sortedTeams = [...allTeamNames].sort((a,b) => a.localeCompare(b, 'vi'));
+  sortedTeams.forEach(team => {
+    const option = new Option(team, team);
+    teamSelect.appendChild(option);
+  });
+  teamSelect.value = currentTeam && sortedTeams.includes(currentTeam) ? currentTeam : '';
+  
+  // Filter bảng
+  const groupSelect = $("#matchFilterGroup");
+  const currentGroup = groupSelect.value;
+  groupSelect.innerHTML = '<option value="">-- Tất cả bảng --</option>';
+  
+  const groups = [...new Set(groupsList.map(g => g.groupName))].sort();
+  groups.forEach(group => {
+    const option = new Option(group, group);
+    groupSelect.appendChild(option);
+  });
+  groupSelect.value = currentGroup && groups.includes(currentGroup) ? currentGroup : '';
+  
+  // Render lại nếu có thay đổi
+  renderMatchesHistory();
+}
+
 // ===== main load sequence =====
 async function loadAndRenderAll(){
   await loadTeamsJson();          // đọc teams.json -> buildGroupsAndMap()
@@ -508,6 +751,10 @@ async function loadAndRenderAll(){
 
   fillTeamFilterDropdown();
   renderTeamCardDetail();
+  
+  // Thêm phần render lịch sử
+  updateMatchFilters();
+  renderMatchesHistory();
 
   toast("Đã nạp & tính toán BXH");
 }
@@ -527,6 +774,7 @@ function bindUI(){
     allMatches=[];
     cardDetailsMap={};
     teamCardsMap={};
+    allMatchesHistory=[];
 
     $("#standingsWrap").innerHTML=`<div class="dim smalltxt">(đã xoá dữ liệu tạm thời)</div>`;
     $("#scorerTbody").innerHTML=`<tr><td colspan="4" class="dim">(không có dữ liệu)</td></tr>`;
@@ -535,10 +783,21 @@ function bindUI(){
     $("#teamCardsDetailTbody").innerHTML=`<tr><td colspan="5" class="dim">(chọn đội để xem)</td></tr>`;
     $("#teamCardTotals").textContent="Vàng: 0 · Đỏ: 0";
     $("#matchCountLabel").textContent="(0 trận đã nạp)";
+    
+    // Clear phần lịch sử
+    $("#matchesHistoryTbody").innerHTML=`<tr><td colspan="6" class="dim">(đã xoá dữ liệu)</td></tr>`;
+    $("#matchFilterTeam").innerHTML='<option value="">-- Tất cả đội --</option>';
+    $("#matchFilterGroup").innerHTML='<option value="">-- Tất cả bảng --</option>';
+    $("#totalMatchesCount").textContent="0 trận";
+    
     toast("Đã xoá tạm bộ nhớ (RAM)");
   });
 
   $("#teamFilterSelect").addEventListener("change",renderTeamCardDetail);
+  
+  // Thêm event listeners cho filter lịch sử
+  $("#matchFilterTeam").addEventListener("change", renderMatchesHistory);
+  $("#matchFilterGroup").addEventListener("change", renderMatchesHistory);
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
