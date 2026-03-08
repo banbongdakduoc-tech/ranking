@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>RANKING</title>
+  <title>BXH & Thống kê giải đấu</title>
   <link rel="stylesheet" href="rank.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
 <header class="app-header">
   <div class="brand">
     <div class="dot"></div>
-    <div class="title">HỘI THAO TRUYỀN THỐNG TRƯỜNG DƯỢC 2025</div>
+    <div class="title">BXH & Thống kê giải đấu</div>
   </div>
 
   <div class="header-tools">
@@ -31,12 +31,14 @@
     <div class="card-header-row">
       <h2>1. Bảng xếp hạng</h2>
       <div class="subnote">
+        BXH sẽ tự hiểu chế độ giải từ <b>teams.json</b>:
         <ul class="note-ul">
           <li><code>"cheDo": "bang"</code> → hiển thị BXH theo từng bảng (Bảng A, Bảng B, ...)</li>
           <li><code>"cheDo": "vong"</code> → hiển thị BXH 1 bảng tổng (tất cả đội gặp nhau)</li>
         </ul>
       </div>
     </div>
+
     <div id="standingsWrap" class="standings-wrap">
       <!-- JS render nhiều bảng -->
       <div class="dim smalltxt">(Đang tải dữ liệu...)</div>
@@ -48,6 +50,7 @@
     <div class="card-header-row">
       <h2>2. Vua phá lưới</h2>
       <div class="subnote">
+        Cộng dồn tất cả bàn thắng trong toàn giải (tất cả các bảng).
       </div>
     </div>
 
@@ -73,6 +76,7 @@
     <div class="card-header-row">
       <h2>3. Thẻ phạt toàn giải</h2>
       <div class="subnote">
+        Tổng hợp số thẻ vàng/đỏ của từng cầu thủ qua tất cả các trận.
       </div>
     </div>
 
@@ -134,6 +138,54 @@
     </div>
   </section>
 
+   <!-- 5. Lịch sử đối đầu & kết quả trận đấu -->
+  <section class="card">
+    <div class="card-header-row">
+      <h2>5. Lịch sử đối đầu & Kết quả trận đấu</h2>
+      <div class="subnote">
+        Danh sách tất cả các trận đấu đã diễn ra, sắp xếp theo thời gian (mới nhất lên đầu).
+      </div>
+    </div>
+
+    <div class="two-col align-end mb16">
+      <div class="fc">
+        <label>Lọc theo đội</label>
+        <select id="matchFilterTeam" class="select-dark">
+          <option value="">-- Tất cả đội --</option>
+        </select>
+      </div>
+      <div class="fc">
+        <label>Lọc theo bảng</label>
+        <select id="matchFilterGroup" class="select-dark">
+          <option value="">-- Tất cả bảng --</option>
+        </select>
+      </div>
+      <div class="team-card-summary fc">
+        <label>Tổng số trận</label>
+        <div id="totalMatchesCount" class="team-card-totals dim smalltxt">
+          0 trận
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-box" style="max-height: 400px;">
+      <table class="table small-table">
+        <thead>
+          <tr>
+            <th>Thời gian</th>
+            <th>Bảng</th>
+            <th>Đội nhà</th>
+            <th>Tỉ số</th>
+            <th>Đội khách</th>
+            <th>Chi tiết</th>
+          </tr>
+        </thead>
+        <tbody id="matchesHistoryTbody">
+          <tr><td colspan="6" class="dim">(đang tải dữ liệu...)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section> 
 </main>
 
 <div id="toast">Saved</div>
