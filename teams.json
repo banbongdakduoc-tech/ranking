@@ -5,72 +5,90 @@
       "tenBang": "Bảng A",
       "doi": [
         {
-          "tenDoi": "Trường Dược FC",
+          "tenDoi": "D10 Plus",
           "cauThu": [
-            { "soAo": 7,  "ten": "Ngô Kiến Đức" },
-            { "soAo": 11, "ten": "Trần Mạnh Hùng" },
-            { "soAo": 18, "ten": "Nguyễn Quốc Hoà" },
-            { "soAo": 9,  "ten": "Tạ Quang Vượng" },
-            { "soAo": 17, "ten": "Nguyễn Huỳnh Tuyên" },
-            { "soAo": 1,  "ten": "Lê Tuấn Anh" },
-            { "soAo": 15, "ten": "Trương Hữu Phương" },
-            { "soAo": 13, "ten": "Nguyễn Thanh Huy" },
-            { "soAo": 8,  "ten": "Nguyễn Mạnh Hùng" },
-            { "soAo": 29, "ten": "Trần Ngọc Thiên Phú" },
-            { "soAo": 6, "ten": "Đỗ Nguyễn Anh Tú" },
-            { "soAo": 77, "ten": "Nguyễn Văn Hà" },
-            { "soAo": 10, "ten": "Nguyễn Đăng Khoa" }
+            { "soAo": 19, "ten": "Đậu Bá Thành" },
+            { "soAo": 10, "ten": "Cáp Xuân Sang" },
+            { "soAo": 3,  "ten": "Triệu Xuân Trường" },
+            { "soAo": 2,  "ten": "Vi Văn Khánh" },
+            { "soAo": 77, "ten": "Võ Lưu Hoàng Tấn" },
+            { "soAo": 13, "ten": "Nguyễn Trọng Tấn" },
+            { "soAo": 9,  "ten": "Nguyễn Tấn Thành" },
+            { "soAo": 8,  "ten": "Hoàng Võ Nghĩa Nhân" },
+            { "soAo": 15, "ten": "Ngô Quang Trường" },
+            { "soAo": 19, "ten": "Hạ Nguyễn Vĩnh Hưng" },
+            { "soAo": 7,  "ten": "Nguyễn Thanh Tùng" },
+            { "soAo": 4,  "ten": "Trần Quốc Thuận" },
+            { "soAo": 13, "ten": "Nguyễn Xuân Nam" },
+            { "soAo": 22, "ten": "Lê Hồng Sơn" },
+            { "soAo": 49, "ten": "Nguyễn Sơn Lâm" }
           ]
         },
         {
-          "tenDoi": "WinX",
+          "tenDoi": "Dược 11 FC",
           "cauThu": [
-            { "soAo": 18, "ten": "Nguyễn Huy Nam" },
-            { "soAo": 4,  "ten": "Nguyễn Tấn Minh" },
-            { "soAo": 12, "ten": "Lê Quốc Trung" },
-            { "soAo": 21, "ten": "Đinh Duy Bảo" },
-            { "soAo": 7,  "ten": "Phạm Đặng Gia Bảo" },
+            { "soAo": 6,  "ten": "Lê Trung Nhân" },
+            { "soAo": 81, "ten": "Lê Song Toàn" },
+            { "soAo": 11, "ten": "Lê Đức Thọ" },
+            { "soAo": 9,  "ten": "Lê Duy Tiến" },
+            { "soAo": 22, "ten": "Bùi Đăng Việt" },
+            { "soAo": 7,  "ten": "Nguyễn Đức Toàn" },
+            { "soAo": 24, "ten": "Võ Trần Ngọc Quang" },
+            { "soAo": 19, "ten": "Ngô Minh Quí" },
+            { "soAo": 8,  "ten": "Phạm Đức Hưng" },
+            { "soAo": 1,  "ten": "Đặng Duy Đông" },
+            { "soAo": 33, "ten": "Nguyễn Thanh Mẫn" },
+            { "soAo": 77, "ten": "Bùi Văn Mạnh" },
+            { "soAo": 5,  "ten": "Trần Đoàn Tấn" }
+          ]
+        },
+        {
+          "tenDoi": "Amphetamine FC",
+          "cauThu": [
+            { "soAo": 25, "ten": "Nguyễn Huy Nam" },
+            { "soAo": 17, "ten": "Đinh Duy Bảo" },
+            { "soAo": 23, "ten": "Phạm Đặng Gia Bảo" },
+            { "soAo": 8,  "ten": "Trần Việt Cường" },
             { "soAo": 11, "ten": "Nguyễn Thành Danh" },
-            { "soAo": 16, "ten": "Trần Chí Danh" },
             { "soAo": 72, "ten": "Nguyễn Đức Độ" },
             { "soAo": 6,  "ten": "Bùi Quang Dũng" },
-            { "soAo": 25, "ten": "Nguyễn Thanh Hải" },
-            { "soAo": 8,  "ten": "Trần Việt Cường" }
+            { "soAo": 7,  "ten": "Nguyễn Thanh Hải" },
+            { "soAo": 12, "ten": "Trần Tấn Lợi" },
+            { "soAo": 19, "ten": "Phạm Hữu Nghĩa" },
+            { "soAo": 1,  "ten": "Lê Quốc Trung" },
+            { "soAo": 16, "ten": "Trần Chí Danh" }
           ]
         },
         {
-          "tenDoi": "Gooners",
+          "tenDoi": "Calma",
           "cauThu": [
-            { "soAo": 21, "ten": "Phan Hoàng Nguyên" },
-            { "soAo": 10, "ten": "Đỗ Đức Huy" },
-            { "soAo": 14, "ten": "Phạm Nguyễn Gia Huy" },
-            { "soAo": 19, "ten": "Ngô Đình Huy" },
-            { "soAo": 7,  "ten": "Nguyễn Minh Trí" },
-            { "soAo": 26, "ten": "Trần Hà Anh Khôi" },
-            { "soAo": 17, "ten": "Phạm Hữu Nghĩa" },
-            { "soAo": 9,  "ten": "Trần Nguyễn Trung Tuấn" },
-            { "soAo": 6,  "ten": "Nguyễn Tấn Hưng" },
-            { "soAo": 1,  "ten": "Trần Tấn Lợi" },
-            { "soAo": 29, "ten": "Tô Huy Hoàng" },
-            { "soAo": 26, "ten": "Lê Ngọc Thắng" },
-            { "soAo": 36, "ten": "Nguyễn Cao Đức Anh" },
-            { "soAo": 5,  "ten": "Lương Lê Chí Thành" }
+            { "soAo": 14, "ten": "Bạch Hưng Thái Sơn" },
+            { "soAo": 33, "ten": "Lê Huỳnh Gia Bảo" },
+            { "soAo": 10, "ten": "Lê Bùi Duy Anh" },
+            { "soAo": 19, "ten": "Hồ Gia Bảo" },
+            { "soAo": 5,  "ten": "Nguyễn Thanh Duy" },
+            { "soAo": 9,  "ten": "Nguyễn Tấn Minh" },
+            { "soAo": 12, "ten": "Đặng Thế Hiển" },
+            { "soAo": 28, "ten": "Dương Dịch Cường" },
+            { "soAo": 13, "ten": "Châu Văn Quốc Anh" },
+            { "soAo": 21, "ten": "Trịnh Quốc Bảo" },
+            { "soAo": 20, "ten": "Nguyễn Danh" }
           ]
         },
         {
-          "tenDoi": "D22",
+          "tenDoi": "The Placebos",
           "cauThu": [
-            { "soAo": 7,  "ten": "Lê Anh Khoa" },
-            { "soAo": 30, "ten": "Liêu Thái Hòa" },
-            { "soAo": 9,  "ten": "Lê Nhật Hoàng" },
-            { "soAo": 23, "ten": "Nguyễn Tâm Luân" },
-            { "soAo": 11, "ten": "Phạm Đức Hoàng Anh" },
-            { "soAo": 4,  "ten": "Lương Hải Duy" },
-            { "soAo": 22, "ten": "Hoàng Tuấn Kiệt" },
-            { "soAo": 1,  "ten": "Nguyễn Minh Hoàng" },
-            { "soAo": 10, "ten": "Nguyễn Lương Huy Nam" },
-            { "soAo": 17, "ten": "Bùi Quang Lê" },
-            { "soAo": 8,  "ten": "Ninh Viết Tuấn Anh" }
+            { "soAo": 15, "ten": "Nguyễn Minh Quang" },
+            { "soAo": 3,  "ten": "Bùi Bình Thiên" },
+            { "soAo": 4,  "ten": "Nguyễn Hoàng Tuấn Vũ" },
+            { "soAo": 10, "ten": "Nguyễn Đức Gia Huy" },
+            { "soAo": 17, "ten": "Hồ Đăng Khoa" },
+            { "soAo": 20, "ten": "Nguyễn Đình Duy Anh" },
+            { "soAo": 15, "ten": "Hoàng Quốc Hùng" },
+            { "soAo": 68, "ten": "Nguyễn Minh Hiền" },
+            { "soAo": 8,  "ten": "Huỳnh Lê Bảo Sơn" },
+            { "soAo": 1,  "ten": "Dương Viết Khải" },
+            { "soAo": 36, "ten": "Nguyễn Anh Quân" }
           ]
         }
       ]
@@ -79,35 +97,23 @@
       "tenBang": "Bảng B",
       "doi": [
         {
-          "tenDoi": "D21",
+          "tenDoi": "Liên Quân FC",
           "cauThu": [
-            { "soAo": 10, "ten": "Nguyễn Hoàng Phú" },
-            { "soAo": 9,  "ten": "Trần Phước Thiên Quốc" },
-            { "soAo": 20, "ten": "Vũ Nhật Ninh" },
-            { "soAo": 5,  "ten": "Lê Văn Tuệ" },
-            { "soAo": 16, "ten": "Hoàng Quốc Bảo" },
-            { "soAo": 4,  "ten": "Huỳnh Trần Bảo Long" },
-            { "soAo": 12, "ten": "Trịnh Xuân Vũ" },
-            { "soAo": 7,  "ten": "Đặng Minh Cường" },
-            { "soAo": 1,  "ten": "Phan Phúc Nguyên Khoa" },
-            { "soAo": 8,  "ten": "Nguyễn Quang Huy" },
-            { "soAo": 29, "ten": "Hoàng Ngọc Bách" }
-          ]
-        },
-        {
-          "tenDoi": "Calma",
-          "cauThu": [
-            { "soAo": 7,  "ten": "Lê Minh Gia An" },
-            { "soAo": 33, "ten": "Lê Huỳnh Gia Bảo" },
-            { "soAo": 10, "ten": "Lê Bùi Duy Anh" },
-            { "soAo": 19, "ten": "Hồ Gia Bảo" },
-            { "soAo": 5,  "ten": "Nguyễn Thanh Duy" },
-            { "soAo": 23, "ten": "Nguyễn Dương Duy An" },
-            { "soAo": 12, "ten": "Đặng Thế Hiển" },
-            { "soAo": 28, "ten": "Dương Dịch Cường" },
-            { "soAo": 13, "ten": "Châu Văn Quốc Anh" },
-            { "soAo": 21, "ten": "Trịnh Quốc Bảo" },
-            { "soAo": 6,  "ten": "Võ Gia Bảo" }
+            { "soAo": 3,  "ten": "Lê Đình Nguyên" },
+            { "soAo": 47, "ten": "Nguyễn Phi Trường" },
+            { "soAo": 2,  "ten": "Nguyễn Thành Thuận" },
+            { "soAo": 7,  "ten": "Phạm Tuấn Anh" },
+            { "soAo": 10, "ten": "Nguyễn Quang Trưởng" },
+            { "soAo": 13, "ten": "Mai Kim Cường" },
+            { "soAo": 9,  "ten": "Anh Duy" },
+            { "soAo": 28, "ten": "Nhật Trường" },
+            { "soAo": 1,  "ten": "Hoàng Nam" },
+            { "soAo": 5,  "ten": "Phan Trọng Đạt" },
+            { "soAo": 6,  "ten": "Tăng Thành Trung" },
+            { "soAo": 19, "ten": "Lê Đức Nguyên" },
+            { "soAo": 8,  "ten": "Lê Hoàng" },
+            { "soAo": 17, "ten": "Thắng" },
+            { "soAo": 11, "ten": "Thiên Tân" }
           ]
         },
         {
@@ -128,21 +134,59 @@
           ]
         },
         {
-          "tenDoi": "MU",
+          "tenDoi": "CSV",
           "cauThu": [
-            { "soAo": 30, "ten": "Huỳnh Minh Tín" },
-            { "soAo": 26, "ten": "Lê Văn Nguyên Tú" },
-            { "soAo": 23, "ten": "Đặng Xuân Tiến" },
-            { "soAo": 14, "ten": "Đỗ Văn Trung" },
-            { "soAo": 7,  "ten": "Bạch Hưng Thái Sơn" },
-            { "soAo": 27, "ten": "Nguyễn Công Trọng" },
-            { "soAo": 25, "ten": "Vũ Nhật Tiến" },
-            { "soAo": 22, "ten": "Phạm Hoàng Diệp Vy" },
-            { "soAo": 4,  "ten": "Nguyễn Trọng" },
-            { "soAo": 1,  "ten": "Lê Ngọc Tín" },
-            { "soAo": 0,  "ten": "Đặng Ngọc Tín" },
-            { "soAo": 11, "ten": "Trần Công Triệu" },
-            { "soAo": 30, "ten": "La Tấn Vũ" }
+            { "soAo": 8,  "ten": "Phạm Ngọc Thành" },
+            { "soAo": 77, "ten": "Nguyễn Đức Phương" },
+            { "soAo": 27, "ten": "Trần Tuấn Anh" },
+            { "soAo": 47, "ten": "Nguyễn Đức Trí" },
+            { "soAo": 5,  "ten": "Huỳnh Nhật Tùng" },
+            { "soAo": 17, "ten": "Nguyễn Lê Thanh Luận" },
+            { "soAo": 7,  "ten": "Đoàn Văn Vũ Tuân" },
+            { "soAo": 9,  "ten": "Nguyễn Đức Phước Châu" },
+            { "soAo": 97, "ten": "Trương Tấn Đạt" },
+            { "soAo": 14, "ten": "Phạm Quốc Trí" },
+            { "soAo": 62, "ten": "Lưu Hoàng Huy" },
+            { "soAo": 20, "ten": "Nguyễn Quang Huy" },
+            { "soAo": 12, "ten": "Nguyễn Hoàng Phú" },
+            { "soAo": 10, "ten": "Trương Văn Nhân" },
+            { "soAo": 13, "ten": "Đỗ Nguyễn Anh Tú" }
+          ]
+        },
+        {
+          "tenDoi": "D22",
+          "cauThu": [
+            { "soAo": 7,  "ten": "Lê Anh Khoa" },
+            { "soAo": 30, "ten": "Liêu Thái Hòa" },
+            { "soAo": 9,  "ten": "Lê Nhật Hoàng" },
+            { "soAo": 23, "ten": "Nguyễn Tâm Luân" },
+            { "soAo": 11, "ten": "Phạm Đức Hoàng Anh" },
+            { "soAo": 4,  "ten": "Lương Hải Duy" },
+            { "soAo": 22, "ten": "Hoàng Tuấn Kiệt" },
+            { "soAo": 1,  "ten": "Nguyễn Minh Hoàng" },
+            { "soAo": 10, "ten": "Nguyễn Lương Huy Nam" },
+            { "soAo": 17, "ten": "Bùi Quang Lê" },
+            { "soAo": 8,  "ten": "Ninh Viết Tuấn Anh" }
+          ]
+        },
+        {
+          "tenDoi": "Trường Dược FC",
+          "cauThu": [
+            { "soAo": 1,  "ten": "Lê Tuấn Anh" },
+            { "soAo": 3,  "ten": "Trương Hữu Phương" },
+            { "soAo": 4,  "ten": "Tạ Quang Vượng" },
+            { "soAo": 6,  "ten": "Đỗ Nguyễn Anh Tú" },
+            { "soAo": 7,  "ten": "Ngô Kiến Đức" },
+            { "soAo": 9,  "ten": "Đỗ Tiến Dân" },
+            { "soAo": 10, "ten": "Lê Minh Quân" },
+            { "soAo": 11, "ten": "Trần Mạnh Hùng" },
+            { "soAo": 13, "ten": "Nguyễn Thanh Huy" },
+            { "soAo": 17, "ten": "Nguyễn Huỳnh Tuyên" },
+            { "soAo": 18, "ten": "Nguyễn Quốc Hoà" },
+            { "soAo": 20, "ten": "Nguyễn Đăng Khoa" },
+            { "soAo": 23, "ten": "Trần Ngọc Thiên Phú" },
+            { "soAo": 88, "ten": "Nguyễn Mạnh Hùng" },
+            { "soAo": 99, "ten": "Nguyễn Văn Hà" }
           ]
         }
       ]
