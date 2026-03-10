@@ -16,16 +16,16 @@
             { "soAo": 9,  "ten": "Nguyễn Tấn Thành" },
             { "soAo": 8,  "ten": "Hoàng Võ Nghĩa Nhân" },
             { "soAo": 15, "ten": "Ngô Quang Trường" },
-            { "soAo": 19, "ten": "Hạ Nguyễn Vĩnh Hưng" },
+            { "soAo": 99, "ten": "Hạ Nguyễn Vĩnh Hưng" },
             { "soAo": 7,  "ten": "Nguyễn Thanh Tùng" },
             { "soAo": 4,  "ten": "Trần Quốc Thuận" },
-            { "soAo": 13, "ten": "Nguyễn Xuân Nam" },
+            { "soAo": 98, "ten": "Nguyễn Xuân Nam" },
             { "soAo": 22, "ten": "Lê Hồng Sơn" },
             { "soAo": 49, "ten": "Nguyễn Sơn Lâm" }
           ]
         },
         {
-          "tenDoi": "Dược 11 FC",
+          "tenDoi": "Dược 11 FC",
           "cauThu": [
             { "soAo": 6,  "ten": "Lê Trung Nhân" },
             { "soAo": 81, "ten": "Lê Song Toàn" },
@@ -78,7 +78,7 @@
         {
           "tenDoi": "The Placebos",
           "cauThu": [
-            { "soAo": 15, "ten": "Nguyễn Minh Quang" },
+            { "soAo": 18, "ten": "Nguyễn Minh Quang" },
             { "soAo": 3,  "ten": "Bùi Bình Thiên" },
             { "soAo": 4,  "ten": "Nguyễn Hoàng Tuấn Vũ" },
             { "soAo": 10, "ten": "Nguyễn Đức Gia Huy" },
@@ -97,7 +97,7 @@
       "tenBang": "Bảng B",
       "doi": [
         {
-          "tenDoi": "Liên Quân FC",
+          "tenDoi": "Liên Quân FC",
           "cauThu": [
             { "soAo": 3,  "ten": "Lê Đình Nguyên" },
             { "soAo": 47, "ten": "Nguyễn Phi Trường" },
