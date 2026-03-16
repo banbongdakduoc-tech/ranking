@@ -46,6 +46,7 @@
           "tenDoi": "Amphetamine FC",
           "cauThu": [
             { "soAo": 25, "ten": "Nguyễn Huy Nam" },
+            { "soAo": 10, "ten": "Đỗ Đức Huy" },
             { "soAo": 17, "ten": "Đinh Duy Bảo" },
             { "soAo": 23, "ten": "Phạm Đặng Gia Bảo" },
             { "soAo": 8,  "ten": "Trần Việt Cường" },
