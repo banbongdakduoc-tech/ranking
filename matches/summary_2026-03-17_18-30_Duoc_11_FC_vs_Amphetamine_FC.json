@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-03-18",
-    "time": "18:50",
+    "time": "17:30",
     "referee": ""
   },
   "teams": {
@@ -86,20 +86,20 @@
     {
       "minute": "7",
       "cardType": "Vàng",
-      "playerName": "Lê Duy Tiến",
-      "playerNumber": "9",
+      "playerName": "Bùi Văn Mạnh",
+      "playerNumber": "77",
       "teamName": "Dược 11 FC"
     },
     {
       "minute": "12",
       "cardType": "Vàng",
-      "playerName": "Nguyễn Thanh Mẫn",
-      "playerNumber": "33",
+      "playerName": "Đặng Duy Đông",
+      "playerNumber": "1",
       "teamName": "Dược 11 FC"
     },
     {
       "minute": "14",
-      "cardType": "Đỏ",
+      "cardType": "Vàng",
       "playerName": "Nguyễn Thanh Mẫn",
       "playerNumber": "33",
       "teamName": "Dược 11 FC"
