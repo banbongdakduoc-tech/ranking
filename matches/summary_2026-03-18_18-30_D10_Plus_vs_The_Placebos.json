@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "date": "2026-03-18",
+    "time": "18:30",
+    "referee": "Nam"
+  },
+  "teams": {
+    "A": {
+      "name": "D10 Plus",
+      "score": 6,
+      "lineup": []
+    },
+    "B": {
+      "name": "The Placebos",
+      "score": 2,
+      "lineup": []
+    }
+  },
+  "goals": [
+    {
+      "minute": "3",
+      "playerName": "Cáp Xuân Sang",
+      "playerNumber": "10",
+      "teamName": "D10 Plus",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "4",
+      "playerName": "Nguyễn Hoàng Tuấn Vũ",
+      "playerNumber": "4",
+      "teamName": "D10 Plus",
+      "type": "own",
+      "ownGoal": true,
+      "victimTeam": "The Placebos"
+    },
+    {
+      "minute": "11",
+      "playerName": "Bùi Bình Thiên",
+      "playerNumber": "3",
+      "teamName": "The Placebos",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "20",
+      "playerName": "Nguyễn Đình Duy Anh",
+      "playerNumber": "20",
+      "teamName": "The Placebos",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "21",
+      "playerName": "Đậu Bá Thành",
+      "playerNumber": "19",
+      "teamName": "D10 Plus",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "22",
+      "playerName": "Ngô Quang Trường",
+      "playerNumber": "15",
+      "teamName": "D10 Plus",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "26",
+      "playerName": "Ngô Quang Trường",
+      "playerNumber": "15",
+      "teamName": "D10 Plus",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "32",
+      "playerName": "Ngô Quang Trường",
+      "playerNumber": "15",
+      "teamName": "D10 Plus",
+      "type": "normal",
+      "ownGoal": false
+    }
+  ],
+  "cards": [
+    {
+      "minute": "19",
+      "cardType": "Vàng",
+      "playerName": "Hồ Đăng Khoa",
+      "playerNumber": "17",
+      "teamName": "The Placebos"
+    }
+  ],
+  "signatures": {
+    "captainA": "data:image/png;base64,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",
+    "captainB": "data:image/png;base64,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",
+    "referee": "data:image/png;base64,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"
+  }
+}
