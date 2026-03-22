@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "date": "2026-03-22",
+    "time": "16:00",
+    "referee": ""
+  },
+  "teams": {
+    "A": {
+      "name": "Liên Quân FC",
+      "score": 5,
+      "lineup": []
+    },
+    "B": {
+      "name": "Trường Dược FC",
+      "score": 5,
+      "lineup": []
+    }
+  },
+  "goals": [
+    {
+      "minute": "1",
+      "playerName": "Thiên Tân",
+      "playerNumber": "11",
+      "teamName": "Liên Quân FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "3",
+      "playerName": "Thắng",
+      "playerNumber": "17",
+      "teamName": "Liên Quân FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "5",
+      "playerName": "Tăng Thành Trung",
+      "playerNumber": "6",
+      "teamName": "Liên Quân FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "7",
+      "playerName": "Nhật Trường",
+      "playerNumber": "28",
+      "teamName": "Liên Quân FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "11",
+      "playerName": "Phạm Tuấn Anh",
+      "playerNumber": "7",
+      "teamName": "Liên Quân FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "21",
+      "playerName": "Ngô Kiến Đức",
+      "playerNumber": "7",
+      "teamName": "Trường Dược FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "23",
+      "playerName": "Đỗ Tiến Dân",
+      "playerNumber": "9",
+      "teamName": "Trường Dược FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "30",
+      "playerName": "Trần Ngọc Thiên Phú",
+      "playerNumber": "23",
+      "teamName": "Trường Dược FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "34",
+      "playerName": "Trần Ngọc Thiên Phú",
+      "playerNumber": "23",
+      "teamName": "Trường Dược FC",
+      "type": "normal",
+      "ownGoal": false
+    },
+    {
+      "minute": "40",
+      "playerName": "Trần Ngọc Thiên Phú",
+      "playerNumber": "23",
+      "teamName": "Trường Dược FC",
+      "type": "normal",
+      "ownGoal": false
+    }
+  ],
+  "cards": [],
+  "signatures": {
+    "captainA": "data:image/png;base64,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",
+    "captainB": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAB4CAYAAADblO/uAAAHpElEQVR4AeydTbLbRBRG7ZAMGEFWAKyEZAewDhjACggrgAGsI+wgYSewAsKMqqRwvs+lfqXnp8Sy1C3d7j4pdSw7Uuv2uT51Wz/v5dGBPxCAQPMEEL35FDNACBwOiM63AAIdEED0DpLMECFQUnToQgACQQggepBEEAYEShJA9JJ06RsCQQggepBEEAYEShKoVfSSTOj7BgKn0+mZ2iu1FzfsxqYbE0D0jYG3cjiJfRZc43ml9kyNJTABRA+cnKihSXJX77HgPx+PR38WNeTu40L07r8C8wFI8FTFfxr2ei3BvSD5ACTqC6I/zAyfXBAYCZ6q+Gtt8lyGP9crSwUEEL2CJO0ZoiS33G7pPPwsuCS37HuGxrFvIIDoN8DqaVMJ/kLtpDEnwX0eLr+PCC4otS2IXlvGCscruR+ch+uQruKchwtErQuib5u5sEcbCZ6m6a7cFtzN62FjJ7DrBBD9OqPmt5DkrtZJcI/X03QEN4lGGqI3ksglw5DgD6bpPglXs/hLumSfoAQQPWhiSoY1EjxVcU/NXcG5XVYS/I59I/qO8DMfelZ3ktxyu6Wr6WfBVcUt+6w+2Kg+AoheX84WRSzBuV22iFwbOyF6G3n84Cgk+A9q/2iDu8dWte4qznm4QPSyIHrDmZbgno7/oiF+rvaXmgV38+d6y9ILAURvMNMSPFXxr4fh/alz8K/Ulgo+dMNLrQQQvdbMfSBuSW6ZUxV/o81+lODpwpvesvRIANEbyboEn6riTyX5r40MkWGsIIDoK+BF2VWSU8WjJCNoHIgeNDFzwpLgl1X8jSp4bVV8zlDZZiUBRF8JcK/dJfm4ijsMn4s/9QoNApcEEP2SSAXvJbnvi6cr6q7iKuRHzsUryN1eISL6XuQXHFeCe6ruXwbh++LugSpuCrSrBBD9KqIYG0hyV3HfNnNAVHFTuN7YYiCA6AOIqC8S/LKK++EXzsWjJixoXIgeNDEOS5Lfq+L6zFN1Hn4RCJbbCCD6bbw22VqCT1ZxXXHjgtsmGWjvIIgeLKeSPN02c2Q8wmoKMVtVUSF6kHRJcFdxT9XTbbPzuThVPEiCKg8D0QMkUJKnKu7bZlTxADlpLQRE3zGjEpwqviP/ng6N6DtlW5JTxXdiX8Fhs4eI6NmRfrxDCf6b2lttxbm4ILBsQwDRt+F8PooE969z+k5vHqv9p8Z9cUFgKU8A0cszPkjwVMW/GA73t66mf6rGffEBCC9lCSB6Wb6WfFzF3+lwv0vwL/XKAoHNCIxE3+yY3RxIldzn4qmKv5PgT9S+7wYAAw1DANELpEKCe6ruHyf1ubiP4Cr+xCs0COxBANEzU5fkaarunl3FVcSPVHHToO1GANEzoZfgruLjqbovuFHFM/Glm3UENhJ9XZDR95bkqYp7qs4Ft+gJ6zA+RF+RdAk+WcU1V2eqvoIru+YngOgLmUpyqvhCduy2PQFEv5G5BKeK38iMzfcn0IDo20GU5FTx7XBzpIwEEH0mTEk+vqLu22Y8/DKTHZvtTwDRr+RAgnuqzsMvVzjxz7EJIPpH8iPJ01TdW7mK64I6D78YBq0uAog+kS8J7ir+9nA4pOfUefhlghMf1UMA0S9yJclTFefhlws2vK2XAKIPuZPgL9X+19t7VVxzdR5+ERSWugkguvInwV/q5Ru1o5pl90+b8TPjgsHSBoHuRZfk/vXKltwZPamCf6K2QRX34WgQ2IZA16JLclfvzwbU/0rwrnkMHHhpkECXX2wJns7HPVV3Wv+Q5P7PE7xOg0BzBLoTXZKnqbol94Mwlvzb5jLLgCAwItCV6IPk96bqquQNSj7KMKsQEIFuRJfkl+fjTNX1BWDpg0Dzoktwn497ij6eqiN5H99vRjkQaFp0SZ7Oxz1c3zp7xFTdKGi9EWhW9EHye+fjvSW3zHjptUYCTYouyT1VT5L7qjpT9Rq/ncScjUBzog+SJ0CWnKvqiQav3RJoSvSx5DoX94Lk3X61GfiYQDOiX0o+HiTrtRAgzlIEmhBdkvs/TTgzchk/r/AXBCBwR6AJ0e9GwwoEIDBJoAnRVcUfq52XyVHyIQQ6J9CE6J3nkOHPItD3Rojed/4ZfScEEL2TRDPMvgkget/5Z/SdEED0ThLNMEsSiN83osfPERFCYDUBRF+NkA4gEJ8AosfPERFCYDUBRF+NkA4gUJJAnr4RPQ9HeoFAaAKIHjo9BAeBPAQQPQ9HeoFAaAKIHjo9BAeBPASmRc/TN71AAAJBCCB6kEQQBgRKEkD0knTpGwJBCCB6kEQQBgRKEthe9JKjoW8IQGCSAKJPYuFDCLRFANHbyiejgcAkAUSfxMKHEGiLQFuit5UbRgOBbAQQPRtKOoJAXAKIHjc3RAaBbAQQPRtKOoJAXAKIPjc3bAeBigkgesXJI3QIzCWA6HNJsR0EKiaA6BUnj9AhMJcAos8lVXI7+oZAYQKIXhgw3UMgAgFEj5AFYoBAYQKIXhgw3UMgAgFEj5CFkjHQNwREANEFgQUCrRNA9NYzzPggIAKILggsEGidAKK3nuGS46PvagggejWpIlAILCeA6MvZsScEqiGA6NWkikAhsJwAoi9nx54lCdB3VgKInhUnnUEgJoH3AAAA//82ZyXkAAAABklEQVQDAN9M3ACcWDwWAAAAAElFTkSuQmCC",
+    "referee": "data:image/png;base64,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"
+  }
+}
